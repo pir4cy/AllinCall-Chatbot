@@ -1,5 +1,5 @@
 .main {
-  margin: 175px auto;
+  margin: 70px auto;
   display: block;
   background-color: #E5E5E5;
   visibility: hidden;
@@ -388,6 +388,6 @@
 }
 
 #launchText {
-  top: 38%;
+  top: 40%;
   left: 44.3%;
 }
