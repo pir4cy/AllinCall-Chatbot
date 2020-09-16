@@ -1,8 +1,10 @@
 .main {
-  margin: 60px auto;
+  margin: 175px auto;
   display: block;
   background-color: #E5E5E5;
+  visibility: hidden;
 }
+
 .fade-in {
   opacity: 0;
   animation: fadeIn ease 2s forwards;
@@ -234,7 +236,7 @@
    
   position: absolute;
   top: 334px;
-  left: 74px;
+  left: 65px;
   border: 1px solid rgba(209,209,209,1);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -280,7 +282,7 @@
   background: rgba(255,255,255,1);
    
   position: absolute;
-  left: 39px;
+  left: 25px;
   border: 1px solid rgba(225,225,225,1);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -331,6 +333,7 @@
   height: 100px;
   left: 33px;
   top: 78px;
+  overflow: auto;
   background: #FFEDCB;
   border-radius: 15px;
 }
@@ -353,21 +356,38 @@
 }
 
 #Q1 {
-  animation-delay: 6s;
-}
-
-#Q2 {
   animation-delay: 8s;
 }
 
-#Q3 {
+#Q2 {
   animation-delay: 10s;
 }
 
-#Q4 {
+#Q3 {
   animation-delay: 12s;
 }
 
-#newChat {
+#Q4 {
   animation-delay: 14s;
+}
+
+#newChat {
+  animation-delay: 16s;
+}
+
+.launchButton {
+  width: 67px;
+  height: 67px;
+  background: linear-gradient(rgba(255,118,0,1), rgba(255,92,0,1));
+  top:30%;
+  left: 45%; 
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15000000596046448);
+
+}
+
+#launchText {
+  top: 38%;
+  left: 44.3%;
 }

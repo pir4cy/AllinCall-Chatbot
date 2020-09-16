@@ -8,7 +8,11 @@
 
 <body> 
     <div class="wrapper">
-        <div class="main">  
+        <div class ="launchButton">
+            <img src="images/robot.png" class="robotPic">
+        </div>
+        <span class="appText" id="launchText">Click me to chat!</span>
+        <div class="main" id="main">  
             <!--FADE 1-->
             <div class="topHalf fade-in">
             </div>
@@ -27,9 +31,9 @@
             </div>    
 
             <!--FADE 3-->
-            <div class="midBox fade-in" style="animation-delay: 4s;">    
-                <span class="faq appText">Frequently Asked Questions</span>
-                <img src="images/qmark-faq.png" class="faqIcon fade-in">
+            <div class="midBox fade-in" style="animation-delay: 4s;" id="midBox">    
+                <span class="faq appText fade-in" style="animation-delay: 6s;">Frequently Asked Questions</span>
+                <img src="images/qmark-faq.png" class="faqIcon fade-in" style="animation-delay: 6s;">
                 <div class="newConv fade-in" id="newChat">
                     <span class="newConvText appText">Start a New Conversation</span>
                     <img src="images/chat-icon.png" class="newConvIcon">

@@ -4,9 +4,12 @@ const Q3 = document.getElementById(`Q3`);
 const Q4 = document.getElementById(`Q4`);
 const newConv = document.getElementById(`newChat`);
 const midBox = document.querySelector('.midBox');
+const lButton = document.querySelector('.launchButton');
+const main = document.querySelector('.main');
 
 let questionAsked = 0;
 
+lButton.addEventListener('click', launchBot);
 
 Q1.addEventListener('click', function(){
     questionAsked = 1;
@@ -46,7 +49,7 @@ function answerQuestion(x) {
             break;
         case 5:
             renderChatbox();
-            console.log(`New convo time`)
+            // console.log(`New convo time`)
     }
 }
 
@@ -75,6 +78,12 @@ function renderChatbox(string=`Hello, I'm Iris. A virtual assistance created to 
     midBox.appendChild(sendButton);
 
     
+}
+
+function launchBot() {
+    main.setAttribute('style',`visibility: visible;`);
+    lButton.setAttribute('style', `visibility: hidden`);
+    document.getElementById('#launchText').setAttribute('style',`visibility: hidden`);
 }
 
 function originalRender() {
