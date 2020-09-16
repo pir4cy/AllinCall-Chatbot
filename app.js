@@ -70,7 +70,7 @@ function renderChatbox(string=`Hello, I'm Iris. A virtual assistance created to 
     var backButton = document.createElement('div');
     backButton.setAttribute('class','messageButtons');
     backButton.addEventListener('click', originalRender);
-    backButton.innerHTML = `<span class="appText" style="top:4px; left:21px; font-weight: Medium;">ReloadU</span>`;
+    backButton.innerHTML = `<span class="appText" style="top:4px; left:21px; font-weight: Medium;">Reload</span>`;
 
     midBox.appendChild(backButton);
     midBox.appendChild(messageBox);
